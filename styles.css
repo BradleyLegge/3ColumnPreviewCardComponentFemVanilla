@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+
+    --Lexend-Deca: "Lexend Deca", sans-serif;
+    /* 400 */
+    --Big-Shoulders-Display: "Big Shoulders Display", sans-serif;
+    /* 700 */
+
+    /* Font-Weight */
+
+    --font-400: 400;
+    --font-700: 700;
+}
