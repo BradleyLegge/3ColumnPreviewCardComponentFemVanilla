@@ -13,8 +13,8 @@
 
     /* Neutral */
 
-    --trans-white: hsla(0, 0%, 100%, 0.75);
-    --very-light-gray: hsl(0, 0%, 95%);
+    --trans-white: hsla(0, 0%, 100%, 0.75); /* para */
+    --very-light-gray: hsl(0, 0%, 95%); /* bg, heading, button */
 
     /* Fonts */
 
@@ -27,4 +27,119 @@
 
     --font-400: 400;
     --font-700: 700;
+}
+
+body{
+    background-color: var(--very-light-gray);
+}
+
+.hero-container{
+    width: 1000px;
+    margin: 200px auto;
+    display: flex;
+}
+
+.sedan-section{
+    border-radius: 10px 0 0 10px;
+    background-color: var(--bright-orange);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.sedan-img, .suv-img, .luxury-img{
+    width: 60px;
+}
+
+h2{
+    font-family: var(--Big-Shoulders-Display);
+    color: var(--very-light-gray);
+    font-size: 38px;
+}
+
+p{
+    font-family: var(--Lexend-Deca);
+    color: var(--trans-white);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.learn-more-btn{
+    cursor: pointer;
+    font-family: var(--Lexend-Deca);
+    font-size: 15px;
+    border: none;
+    border-radius: 100px;
+    height: 40px;
+    width: 150px;
+    background-color: var(--very-light-gray);
+}
+
+.learn-more-btn:hover{
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.sedan-btn{
+    color: var(--bright-orange);
+}
+
+.sedan-btn:hover{
+    background-color: var(--bright-orange);
+}
+
+.suv-section{
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.suv-btn{
+    color: var(--dark-cyan);
+}
+
+.suv-btn:hover{
+    background-color: var(--dark-cyan);
+}
+
+.luxury-section{
+    border-radius: 0 10px 10px 0;
+    background-color: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+.luxury-btn{
+    color: var(--very-dark-cyan);
+}
+
+.luxury-btn:hover{
+    background-color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 800px) {
+    .hero-container{
+        flex-direction: column;
+        margin: 50px auto;
+        width: 100%;
+        padding: 30px;
+        height: 100%;
+    }
+
+    .sedan-section{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .suv-section{
+        border-radius: none;
+    }
+    .luxury-section{
+        border-radius: 0 0  10px 10px;
+    }
 }
